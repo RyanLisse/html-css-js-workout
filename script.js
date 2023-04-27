@@ -1,6 +1,7 @@
+const borderElement = document.querySelector(".box");
+const colors = ["red", "blue", "green", "yellow"];
+
 setInterval(() => {
-  const box = document.querySelector(".box");
-  const colors = ["red", "blue", "green", "yellow"];
-  const randomColor = colors[Math.floor(Math.random() * colors.length)];
-  box.style.borderColor = randomColor;
+  const newBorderColor = colors[Math.floor(Math.random() * colors.length)];
+  borderElement.style.borderColor = newBorderColor;
 }, 3000);
